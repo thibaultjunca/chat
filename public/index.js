@@ -19,7 +19,7 @@ msg.addEventListener('change', event => {
 })
 
 function addMessage(data){
-    let randRGB = 'rgb(' + 100 + Math.random() * 100 + ', ' + 100 + Math.random() * 100 + ', ' + 100 + Math.random() * 100 + ')';
+    let randRGB = 'rgb(' + (100 + Math.random() * 100) + ', ' + (100 + Math.random() * 100) + ', ' + (100 + Math.random() * 100) + ')';
     let message = document.createElement('p');
     message.innerHTML = data;
     message.style.backgroundColor = randRGB;
